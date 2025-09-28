@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Operação - Robô Explorador</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light-mode">
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fa-solid fa-robot"></i> ROBOESP</h3>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="active"><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard Principal</a></li>
+            <li><a href="#"><i class="fa-solid fa-camera"></i> Câmera</a></li>
+            <li><a href="#"><i class="fa-solid fa-chart-line"></i> Análises Detalhadas</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a></li>
+        </ul>
+        <div class="sidebar-info-box">
+            <div class="info-icon-container"><i class="fa-solid fa-microchip"></i></div>
+            <h4>Problema #3 – 2025.1</h4>
+            <p>SISTEMAS EMBARCADOS</p>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <p class="header-breadcrumb">Páginas / Dashboard</p>
+                <h1 class="header-title">Dashboard Principal</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="status-bar">
+                    <span id="status-dot" class="dot disconnected"></span>
+                    <span id="status-text">Desconectado</span>
+                </div>
+                <button class="icon-button"><i class="fa-regular fa-bell"></i></button>
+                <button class="icon-button" id="theme-toggle-button">
+                    <i id="theme-icon" class="fa-regular fa-moon"></i>
+                </button>
+                <div class="profile-menu">
+                    <img src="https://i.pinimg.com/736x/9e/11/0a/9e110ae83206b735af16b2e22f3687dd.jpg" alt="Avatar de Robô Rosa">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="stats-grid">
+                <div class="card stat-card">
+                    <div class="stat-icon-wrapper"><i class="fa-solid fa-temperature-half"></i></div>
+                    <div class="stat-info">
+                        <p class="stat-label">Temperatura</p>
+                        <p class="stat-value"><span id="temp-value">--.-</span> °C</p>
+                    </div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-icon-wrapper"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="stat-info">
+                        <p class="stat-label">Umidade</p>
+                        <p class="stat-value"><span id="humidity-value">--.-</span> %</p>
+                    </div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-icon-wrapper"><i class="fa-solid fa-wind"></i></div>
+                    <div class="stat-info">
+                        <p class="stat-label">Gás</p>
+                        <p class="stat-value"><span id="gas-value">--.-</span> ppm</p>
+                    </div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-icon-wrapper"><i class="fa-solid fa-sun"></i></div>
+                    <div class="stat-info">
+                        <p class="stat-label">Luminosidade</p>
+                        <p class="stat-value"><span id="light-value">--.-</span> cd</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dashboard-grid">
+                <div class="card card-main">
+                    <div class="card-header">
+                        <h3>Análise de Habitabilidade</h3>
+                        <button class="options-button"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <div class="gauge">
+                            <div class="gauge-body">
+                                <div class="gauge-cover"><span id="life-prob-value">0%</span></div>
+                            </div>
+                        </div>
+                        <p id="classification-text">Aguardando dados...</p>
+                    </div>
+                </div>
+
+                <div class="card chart-container">
+                    <div class="card-header"><h3>Histórico Climático</h3><button class="options-button"><i class="fa-solid fa-ellipsis"></i></button></div>
+                    <div class="card-body"><canvas id="tempHumidityChart"></canvas></div>
+                </div>
+
+                <div class="card control-panel">
+                    <div class="card-header"><h3>Controle de Missão</h3></div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-satellite-dish control-icon"></i>
+                        <h4>Status do Sistema</h4>
+                        <p>Alterne o estado de operação do robô.</p>
+                        <button id="stop-button">Alternar Sistema</button>
+                    </div>
+                </div>
+                
+                <div class="card photo-card">
+                    <div class="card-header"><h3>Última Captura Visual</h3><button class="options-button"><i class="fa-solid fa-ellipsis"></i></button></div>
+                    <div class="card-body">
+                        <img id="robot-photo" src="" alt="Última foto do robô" style="display: none;">
+                        <p id="photo-status">Aguardando foto...</p>
+                    </div>
+                </div>
+
+                <div class="card chart-container">
+                    <div class="card-header"><h3>Análise Ambiental</h3><button class="options-button"><i class="fa-solid fa-ellipsis"></i></button></div>
+                    <div class="card-body"><canvas id="gasLightChart"></canvas></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
