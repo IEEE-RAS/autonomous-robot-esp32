@@ -20,20 +20,26 @@ Atualmente, o projeto está numa fase de reavaliação e expansão. A prova de c
 
 ### Metas atuais
 
-  * **Hardware:** [Ex: Finalizar o design da PCB para os drivers de motor].
-  * **Software:** [Ex: Implementar o algoritmo de desvio de obstáculos].
-  * **Modelagem 3D:** [Ex: Imprimir a versão 2.1 do chassi e validar as montagens].
+  * **Hardware:** 
+  * **Software:** 
 
 ### Objetivos Gerais
 
-  - **Hardware:**
-      - [ ] Projetar e montar um chassi robusto e modular.
-      - [ ] Desenvolver uma placa de circuito impresso (PCB) customizada para gerenciamento de energia e sensores.
-      - [ ] Integrar [listar sensores e atuadores, ex: Lidar, câmera, motores DC].
-  - **Software:**
-      - [ ] Desenvolver um sistema de controle de baixo nível para os atuadores.
-      - [ ] Implementar algoritmos de localização e mapeamento simultâneo (SLAM).
-      - [ ] Criar uma interface de usuário para monitoramento e controle remoto.
+- **Hardware:**
+    - [x] Utilizar um ESP32 como microcontrolador principal.
+    - [x] Montar Projeto na Protoboard
+    - [ ] Substituir os potenciômetros de simulação por sensores reais (a serem definidos).
+    - [ ] Integrar um módulo de câmara para captura de imagens.
+
+- **Software:**
+    - [x] Desenvolver um sistema de comunicação robusto entre o robô (ESP32) e um servidor central (Broker).
+    - [x] Criar uma interface de usuário web para monitoramento e controle remoto.
+    - [x] Implementar um sistema de captura de fotos sob demanda.
+    - [x] Integrar um bot do Telegram para notificações automáticas de status.
+    - [ ] Atualizar HTML e JS para colocar interface web em produção
+- **IA:**
+    - [x] Implementar um modelo de Inteligência Artificial embarcado no ESP32.
+    - [ ] Coletar um novo dataset com os sensores reais e treinar uma versão aprimorada da rede neural.
 
 ## 🛠️ Tecnologias e Ferramentas
 
@@ -41,7 +47,7 @@ Atualmente, o projeto está numa fase de reavaliação e expansão. A prova de c
 | -------------- | ------------------------------------------------------------------ |
 | **Linguagens** | C/C++ (ESP32), Python (Broker), HTML, CSS, JavaScript (Dashboard) |
 | **Frameworks** | Flask, Flask-CORS (Python), Chart.js (JS), ArduinoJson, UniversalTelegramBot (C++) |
-| **Hardware** | ESP32, Sensores (Temperatura, Umidade, Gás, Luminosidade), Webcam  |
+| **Hardware** | ESP32, Sensores (a serem definidos), Webcam, Módulo de Câmera (a ser definido) |
 | **Banco de Dados** | SQLite                                                           |
 
 
