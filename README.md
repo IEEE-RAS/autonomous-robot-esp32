@@ -71,7 +71,7 @@ Aqui registramos nosso progresso semanalmente. Cada entrada inclui atualizaçõe
     * **Toda a equipe:** Realizar uma pesquisa de trabalhos académicos e possíveis locais para publicação, cobrindo os escopos de IoT, IA, sensoriamento, agricultura inteligente e visão computacional (mínimo de 1 trabalho por escopo).
 
 * **Gestão de Projeto:**
-    * As reuniões semanais foram fixadas para o horário das 13h às 13h30 e agendadas no Google Agenda da equipa.
+    * As reuniões semanais foram fixadas para o horário das 13h às 13h30 e agendadas no Google Agenda da equipe.
 
 
 ## 🚀 Como Contribuir
