@@ -6,7 +6,7 @@
 
 Este repositório serve como o diário de desenvolvimento oficial do projeto ROBOESP. Nosso objetivo é desenvolver um robô explorador autônomo, o ROBOESP, capaz de coletar dados ambientais através de múltiplos sensores. O robô utiliza um modelo de inteligência artificial embarcado para analisar os dados e prever a "probabilidade de vida" em tempo real. As informações são transmitidas a um servidor central (Broker) que as disponibiliza para um dashboard web, permitindo o monitoramento e controle remoto do sistema.
 
-Atualmente, o projeto está numa fase de reavaliação e expansão. A prova de conceito inicial utilizou potenciômetros para simular as leituras dos sensores. Agora, o foco é na seleção e integração de sensores reais, na adição de novas funcionalidades como visão computacional, e na otimização do nosso modelo de IA.
+Atualmente, o projeto está numa fase de reavaliação e expansão. O protótipo inicial utilizou potenciômetros para simular as leituras dos sensores. Agora, o foco é na seleção e integração de sensores reais, na adição de novas funcionalidades como visão computacional e na otimização do modelo de IA.
 
 ## 👥 Equipe
 
