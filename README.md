@@ -1,20 +1,20 @@
-# 🤖 [Modelo de Diario de desenvolvimento] - Diário de Desenvolvimento
+# 🤖 ROBOESP - Diário de Desenvolvimento
 
 **Equipe:** IEEE RAS - UEFS
 
 ## 📝 Visão Geral
 
-Este repositório serve como o diário de desenvolvimento oficial do projeto [Nome do Projeto]. Nosso objetivo é [descrever o objetivo principal do projeto em uma ou duas frases, por exemplo: "construir um robô autônomo para competições de robótica" ou "desenvolver um sistema de visão computacional para manipulação de objetos"]. Aqui, documentamos nosso progresso, desafios e aprendizados em todas as frentes: software, hardware, eletrônica e design mecânico.
+Este repositório serve como o diário de desenvolvimento oficial do projeto ROBOESP. Nosso objetivo é desenvolver um robô explorador autônomo, o ROBOESP, capaz de coletar dados ambientais através de múltiplos sensores. O robô utiliza um modelo de inteligência artificial embarcado para analisar os dados e prever a "probabilidade de vida" em tempo real. As informações são transmitidas a um servidor central (Broker) que as disponibiliza para um dashboard web, permitindo o monitoramento e controle remoto do sistema.
+
+Atualmente, o projeto está numa fase de reavaliação e expansão. A prova de conceito inicial utilizou potenciômetros para simular as leituras dos sensores. Agora, o foco é na seleção e integração de sensores reais, na adição de novas funcionalidades como visão computacional, e na otimização do nosso modelo de IA.
 
 ## 👥 Equipe
 
 | Nome                 | Cargo no projeto             | GitHub                                     |
 | -------------------- | ------------------------- | ------------------------------------------ |
-| [Nome do Membro 1]   | Líder de Projeto | [@username](https://www.google.com/search?q=https://github.com/username)   |
-| [Nome do Membro 2]   | Secretario de Mesa   | [@username](https://www.google.com/search?q=https://github.com/username)   |
-| [Nome do Membro 3]   | Projetista   | [@username](https://www.google.com/search?q=https://github.com/username)   |
-| [Nome do Membro 4]   | Projetista             | [@username](https://www.google.com/search?q=https://github.com/username)   |
-| *Adicionar mais membros* |                           |                                            |
+| Silvio Azevedo    | Líder de Projeto | [@Silviozv](https://github.com/Silviozv)   |
+| Yasmin Cordeiro  | Secretario de Mesa   | [@yasmincsme](https://github.com/yasmincsme)   |
+| Naila Suele    | Projetista   | [@nailasuely](https://github.com/nailasuely)   |
 
 ## 🎯 Metas do Projeto
 
@@ -37,14 +37,13 @@ Este repositório serve como o diário de desenvolvimento oficial do projeto [No
 
 ## 🛠️ Tecnologias e Ferramentas
 
-| Categoria         | Ferramentas                                       |
-| ----------------- | ------------------------------------------------- |
-| **Linguagens** | C++, Python                                       |
-| **Frameworks** | ROS (Robot Operating System), OpenCV, TensorFlow  |
-| **Hardware** | Raspberry Pi 4, Arduino Nano, ESP32               |
-| **Modelagem 3D** | SolidWorks, Fusion 360, Onshape                   |
-| **Design de PCB** | KiCad, Altium Designer, Eagle                     |
-| **Simulação** | Gazebo, CoppeliaSim (V-REP)                       |
+| Categoria      | Ferramentas                                                        |
+| -------------- | ------------------------------------------------------------------ |
+| **Linguagens** | C/C++ (ESP32), Python (Broker), HTML, CSS, JavaScript (Dashboard) |
+| **Frameworks** | Flask, Flask-CORS (Python), Chart.js (JS), ArduinoJson, UniversalTelegramBot (C++) |
+| **Hardware** | ESP32, Sensores (Temperatura, Umidade, Gás, Luminosidade), Webcam  |
+| **Banco de Dados** | SQLite                                                           |
+
 
 -----
 
@@ -52,39 +51,22 @@ Este repositório serve como o diário de desenvolvimento oficial do projeto [No
 
 Aqui registramos nosso progresso semanalmente. Cada entrada inclui atualizações de hardware e software, os desafios que encontramos e as decisões que tomamos.
 
-### Semana 1: (DD/MM/AAAA) - (DD/MM/AAAA)
+### Semana de 22/09/2025 - 28/09/2025
 
-**Foco da Semana:** Planejamento Inicial e Prototipagem
+**Foco da Semana:** Reavaliação Estratégica e Planejamento
 
-  * **Software:**
-      * **Arquitetura:** Definimos a arquitetura de software baseada em nós do ROS. A comunicação entre os nós de percepção, controle e planejamento foi esquematizada.
-      * **Código:** Criamos a estrutura inicial do repositório e os pacotes ROS essenciais. `[Link para o Commit ou Pull Request]`
-  * **Hardware & Modelagem 3D:**
-      * **Modelagem:** O primeiro rascunho do chassi foi modelado no SolidWorks, focando em um design modular para fácil manutenção.
-          * *Arquivo CAD:* `[Link para a pasta /cad/v1.0]`
-      * **Eletrônica:** Selecionamos os componentes eletrônicos principais e desenhamos o esquemático preliminar no KiCad.
-  * **Desafios:**
-      * Decidir qual microcontrolador principal usar (Raspberry Pi vs. Jetson Nano) foi um grande debate. A escolha impacta o custo e a capacidade de processamento de IA.
-  * **Decisões:**
-      * Optamos pela Raspberry Pi 4 para a fase inicial devido à familiaridade da equipe e ao vasto suporte da comunidade.
+* **Decisões de Projeto (Reunião de 27/09):**
+    * **Rede Neural:** O grupo está a considerar refazer a rede neural. O plano inclui a seleção de novos sensores reais (para substituir os potenciômetros de simulação), a recolha de um novo dataset com base nos ranges desses sensores, e o retreinamento do modelo para maior precisão.
+    * **Publicação:** Decidimos não focar em congressos da área de educação para manter abertas mais opções de publicação em locais de maior impacto técnico.
 
-### Semana 2: (DD/MM/AAAA) - (DD/MM/AAAA)
+* **Tarefas da Semana:**
+    * **Naila:** Responsável por atualizar o repositório no GitHub, subindo os arquivos da aplicação web (dashboard e broker) e revisando o README.
+    * **Yasmin:** Encarregada de pesquisar módulos de câmara, focando em custo e especificações técnicas para a futura integração.
+    * **Toda a equipe:** Realizar uma pesquisa de trabalhos académicos e possíveis locais para publicação, cobrindo os escopos de IoT, IA, sensoriamento, agricultura inteligente e visão computacional (mínimo de 1 trabalho por escopo).
 
-**Foco da Semana:** Impressão do Chassi e Integração de Sensores
+* **Gestão de Projeto:**
+    * As reuniões semanais foram fixadas para o horário das 13h às 13h30 e agendadas no Google Agenda da equipa.
 
-  * **Software:**
-      * **Código:** Implementamos o driver para o sensor de unidade de medição inercial (IMU) e publicamos os dados em um tópico ROS. `[Link para o Commit]`
-      * **Testes:** Realizamos testes iniciais para visualizar os dados da IMU no Rviz.
-  * **Hardware & Modelagem 3D:**
-      * **Impressão 3D:** A primeira versão do chassi foi impressa em PLA. Identificamos alguns pontos de melhoria na rigidez estrutural.
-      * **Montagem:** Iniciamos a montagem dos motores e da IMU no chassi.
-  * **Desafios:**
-      * O ruído nos dados da IMU foi maior do que o esperado, exigindo a pesquisa e implementação de filtros de software (ex: Filtro de Kalman).
-  * **Próximos Passos:**
-      * Reforçar o design do chassi na modelagem 3D.
-      * Implementar um filtro de software para os dados da IMU.
-
-**(Continue este formato para as semanas seguintes)**
 
 ## 🚀 Como Contribuir
 
