@@ -75,7 +75,7 @@ Aqui registramos nosso progresso semanalmente. Cada entrada inclui atualizaçõe
  
 ### Semana de 29/09/2025 - 05/10/2025
 
-**Foco da Semana:** Avaliação de Artigos Envolvendo Sensoriamento e Machine Learning
+**Foco da Semana:** Avaliação de Artigos Envolvendo os Eixos Temáticos
 
 * **Decisões de Projeto (Reunião de 29/09):**
     * **Avaliação dos Artigos:** O grupo discutiu alguns temas e desistiu de projetos envolvendo agricultura de precisão e green houses, decidiu-se que seria mais proveitoso explorar temas pouco publicados, como infragram.
