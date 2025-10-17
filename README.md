@@ -72,6 +72,30 @@ Aqui registramos nosso progresso semanalmente. Cada entrada inclui atualizaçõe
 
 * **Gestão de Projeto:**
     * As reuniões semanais foram fixadas para o horário das 13h às 13h30 e agendadas no Google Agenda da equipe.
+ 
+### Semana de 29/09/2025 - 05/10/2025
+
+**Foco da Semana:** Avaliação de Artigos Envolvendo Sensoriamento e Machine Learning
+
+* **Decisões de Projeto (Reunião de 29/09):**
+    * **Avaliação dos Artigos:** O grupo discutiu alguns temas e desistiu de projetos envolvendo agricultura de precisão e green houses, decidiu-se que seria mais proveitoso explorar temas pouco publicados, como infragram.
+    * **Sugestões:** Foi determinado que os integrantes do grupo irão pesquisar sobre monitoramento hídrico e técnicas de coleta de imagem que envolvam infragram.
+
+* **Tarefas da Semana:**
+    * **Yasmin:** Atualização do diário de desenvolvimento no github.
+    * **Toda a equipe:** Pesquisa sobre monitoramento hídrico e infragram
+
+### Semana de 06/10/2025 - 12/10/2025
+
+**Foco da Semana:** Avaliação de Artigos Envolvendo Infragram e Monitoramento Hídrico
+
+* **Decisões de Projeto (Reunião de 06/09):**
+    * **Avaliação dos Artigos:** A equipe decidiu que um projeto na área de monitoramento hídrico não seria tão interessante quanto a do Infragram, que ainda é uma técnica pouco explorada.
+    * **Definição do Escopo do Projeto:** Decidimos desenvolver um sistema que auxilie no monitoramento da saúde de plantas em hidropônia.
+
+* **Tarefas da Semana:**
+    * **Yasmin:** Atualização do diário de desenvolvimento no github.
+    * **Toda a equipe:** Levantamento de materiais.
 
 
 ## 🚀 Como Contribuir
