@@ -108,6 +108,7 @@ Aqui registramos nosso progresso semanalmente. Cada entrada inclui atualizaçõe
 * **Tarefas da Semana:**
     * **Yasmin:** Atualização do diário de desenvolvimento no github.
     * **Toda a equipe:** Pesquisar sobre o infragram e o uso de diferentes módulos de câmera em associação.
+    * **Toda a equipe:** Diagrama com arquitetura do projeto.
 
 
 ## 🚀 Como Contribuir
