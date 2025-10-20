@@ -96,6 +96,18 @@ Aqui registramos nosso progresso semanalmente. Cada entrada inclui atualizaçõe
 * **Tarefas da Semana:**
     * **Yasmin:** Atualização do diário de desenvolvimento no github.
     * **Toda a equipe:** Levantamento de materiais.
+      
+### Semana de 20/10/2025 - 26/10/2025
+
+**Foco da Semana:** Aquisição de Componentes e Estudos
+
+* **Decisões de Projeto (Reunião de 20/09):**
+    * **Compra de Materiais:** Foi feita a compra do módulo de câmera NOIR v2 8mp da raspberry pi, mas a aquisição dos sensores ainda não foi realizada pois é necessário verificar se os módulos utilizados no projeto que estamos usando como inspiração atende aos requisitos do escopo atual.
+    * **Pesquisa:** Faz-se necessária a revisão do datasheet da câmera NOIR v2 8mp da raspberry pi e a avaliação de como ela será aplicada no projeto.
+
+* **Tarefas da Semana:**
+    * **Yasmin:** Atualização do diário de desenvolvimento no github.
+    * **Toda a equipe:** Pesquisar sobre o infragram e o uso de diferentes módulos de câmera em associação.
 
 
 ## 🚀 Como Contribuir
