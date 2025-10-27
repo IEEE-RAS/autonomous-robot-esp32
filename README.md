@@ -110,6 +110,20 @@ Aqui registramos nosso progresso semanalmente. Cada entrada inclui atualizaçõe
     * **Toda a equipe:** Pesquisar sobre o infragram e o uso de diferentes módulos de câmera em associação.
     * **Toda a equipe:** Diagrama com arquitetura do projeto.
 
+### Semana de 27/10/2025 - 03/11/2025
+
+**Foco da Semana:** Listagem de componentes para compra
+
+* **Decisões de Projeto (Reunião de 27/10):**
+    * **Câmera:** Para o uso de uma única câmera no infragram, é necessário utilizar um filtro para limitar a entrada das luzes de banda visível. Por isso, deve ser pesquisado o filtro que se encaixe no sistema.
+    * **Sensores:** Foram definidos os tipos de sensores que serão utlizados. Devem ser encontrados os melhores modelos para compra.
+    * **Ambiente:** Foram levantadas possíveis formas de implementar o ambiente de hidroponia. É preciso definir a forma que seja mais rentável e eficiente para o que foi proposto.
+
+* **Tarefas da Semana:**
+    * **Silvio:** Definir forma de utilização da câmera no infragram e encontrar filtro de banda visível para compra, se necessário.
+    * **Yasmin:** Encontrar os sensores para compra.
+    * **Toda a equipe:** Analisar a melhor forma de implementar a arquitetura do sistema em hidroponia.
+
 
 ## 🚀 Como Contribuir
 
